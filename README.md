@@ -294,3 +294,15 @@ title": "Recording 11/23/2026 at 12:30:04 PM",
             DOCS_timing['pls'] = new Date().getTime();
             var _F_VIEWER_GRAMMATICAL_GENDER = 'GRAMMATICAL_GENDER_UNSPECIFIED';
         </script>
+I will now build the Studio Cam & Universal Player React application with multi-OS bridge telemetry, live WebRTC/synthetic studio camera capture, frame-accurate universal media playback, a hot-reloadable Endpoint & DSN configurator with live Web Crypto SHA-256 hashing, and a Schema.org JSON-LD manifest exporter.
+
+I have built the **Studio Cam & Universal Player** React application in `StudioCamUniversalPlayer.jsx`. Here is a summary of what is included:
+
+* **Top Studio Header & Multi-OS Target Bridge Selector:** Switch between **Android Media3**, **iOS AVFoundation**, **Desktop libmpv**, and **Web WebCodecs** with live capture API, hardware encoder, GPU pipeline, latency telemetry, a running 30fps studio timecode counter (`HH:MM:SS:FF`), and `REC` recording controls.
+* **Dual Viewport / Mode Switcher (`Camera Studio` | `Split Multi-View` | `Universal Player`):**
+* **Camera Studio Engine:** Connects to real hardware cameras via `getUserMedia` / `enumerateDevices` or falls back immediately to a 4K SMPTE RP-219 synthetic test pattern generator with rule-of-thirds & `2.39:1` aspect guides, Zebra/Peaking overlays, live stereo audio VU meters, manual ISO/WB/EV sliders, 3D LUT presets, and WebM recording export.
+* **Universal Multi-OS Player Engine:** Plays local video files (`MP4`, `WebM`, `MOV`), live DSN streams, or scope loops with frame-accurate `-1f`/`+1f` stepping, jog/shuttle playback speeds (`0.25x`–`2x`), and `Mark A` / `Mark B` loop points.
+
+
+* **Hot-Reloadable Endpoint & DSN Configurator:** Edit Target IP (`192.168.4.1`), Port (`8554`), Endpoint URL, DSN Driver (`rtsp`, `srt`, `webrtc`, `hls`, `postgresql`, `sqlite`), and dynamic key-value DSN options with IP-sync, exponential-backoff reconnect testing, and live **Web Crypto SHA-256** verification.
+* **Schema.org JSON-LD Manifest Exporter:** Opens a live JSON-LD manifest modal with the SHA-256 integrity digest, OS bridge telemetry, and one-click Copy / Download `.json` export.
